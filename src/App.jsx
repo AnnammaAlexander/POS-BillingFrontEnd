@@ -1,17 +1,23 @@
 import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./styles/blue-theme.css";
 import ProductManagement from "./components/ProductManagement";
 import CustomerManagement from "./components/CustomerManagement";
 import Billing from "./components/Billing";
 import { Button } from "./components/ui/button";
-import { LayoutDashboard, Receipt, Users } from "lucide-react";
+import { LayoutDashboard, Receipt, Users, Palette } from "lucide-react";
 
 function App() {
   const [activeTab, setActiveTab] = useState("billing");
+  const [isBlueTheme, setIsBlueTheme] = useState(false);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
+    <div
+      className={`min-h-screen ${
+        isBlueTheme ? "blue-theme" : "bg-slate-50 text-slate-900"
+      } font-sans`}
+    >
       <ToastContainer
         position="top-right"
         autoClose={3000}

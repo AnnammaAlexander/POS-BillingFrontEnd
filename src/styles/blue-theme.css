@@ -1,0 +1,170 @@
+/* Blue Theme - Modern Professional Style */
+
+/* Base colors */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #3b82f6;
+  --secondary: #64748b;
+  --accent: #0ea5e9;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --background: #f8fafc;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+}
+
+/* Global styles */
+.blue-theme {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Navigation */
+.blue-theme nav {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-bottom: none;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1), 0 2px 4px -1px rgba(37, 99, 235, 0.06);
+}
+
+.blue-theme nav h1 {
+  color: white;
+}
+
+.blue-theme nav h1 span {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Buttons */
+.blue-theme .btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  border: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.blue-theme .btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.blue-theme .btn-secondary {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.blue-theme .btn-secondary:hover {
+  background: var(--primary-light);
+  color: white;
+  border-color: var(--primary-light);
+}
+
+/* Cards */
+.blue-theme .card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.1);
+  transition: all 0.2s ease;
+}
+
+.blue-theme .card:hover {
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+  transform: translateY(-2px);
+}
+
+.blue-theme .card-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 1rem 1.5rem;
+}
+
+.blue-theme .card-title {
+  color: white;
+  font-weight: 600;
+}
+
+/* Tables */
+.blue-theme .table {
+  border-color: var(--border);
+}
+
+.blue-theme .table-header {
+  background: var(--primary-light);
+  color: white;
+}
+
+.blue-theme .table-row:hover {
+  background: rgba(37, 99, 235, 0.05);
+}
+
+/* Inputs */
+.blue-theme .input {
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.blue-theme .input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Badges and status indicators */
+.blue-theme .badge-success {
+  background: var(--success);
+  color: white;
+}
+
+.blue-theme .badge-warning {
+  background: var(--warning);
+  color: white;
+}
+
+.blue-theme .badge-danger {
+  background: var(--danger);
+  color: white;
+}
+
+.blue-theme .badge-info {
+  background: var(--accent);
+  color: white;
+}
+
+/* Dropdowns */
+.blue-theme .dropdown {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+}
+
+.blue-theme .dropdown-item:hover {
+  background: rgba(37, 99, 235, 0.1);
+}
+
+/* Bill totals */
+.blue-theme .bill-total {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+/* Active states */
+.blue-theme .active-tab {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  border: none;
+}
+
+.blue-theme .active-tab:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+}

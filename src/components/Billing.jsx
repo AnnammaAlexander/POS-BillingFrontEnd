@@ -548,8 +548,9 @@ const Billing = () => {
           <div className="w-full grid grid-cols-2 gap-2">
             <Button
               onClick={() => handleBillFinalization("print")}
-              className="w-full"
-              variant="secondary"
+              className="w-full "
+              
+              variant=""
               disabled={isProcessing || cart.length === 0}
             >
               <Printer className="mr-2 h-4 w-4" />{" "}
@@ -557,12 +558,12 @@ const Billing = () => {
             </Button>
             <Button
               onClick={() => handleBillFinalization("download")}
-              className="w-full"
+              className="w-full bg-blue-200 text-black"
               variant="outline"
               disabled={isProcessing || cart.length === 0}
             >
-              <Download className="mr-2 h-4 w-4" />{" "}
-              {isProcessing ? "Processing..." : "Download PDF"}
+              <Download className="mr-2 h-4 w-4 " />{" "}
+              {isProcessing ? "Processing..." : "Checkout & Download"}
             </Button>
           </div>
         </CardFooter>
